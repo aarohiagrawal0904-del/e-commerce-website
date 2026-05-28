@@ -1,0 +1,17 @@
+{
+  "name": "smart-ecommerce-system",
+  "version": "1.0.0",
+  "description": "Full Stack Smart E-Commerce Order Management System with Gemini AI Integration",
+  "scripts": {
+    "install-all": "npm install && npm run install-backend && npm run install-frontend",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "dev-backend": "cd backend && npm run dev",
+    "dev-frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev-backend\" \"npm run dev-frontend\"",
+    "db-init": "cd backend && node config/init_db.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
